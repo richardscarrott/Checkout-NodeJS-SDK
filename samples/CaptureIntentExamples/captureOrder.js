@@ -44,6 +44,7 @@ async function captureOrder(orderId, debug=false) {
             // To toggle print the whole body comment/uncomment the below line
             console.log(JSON.stringify(response.result, null, 4));
         }
+        // Order has been successfully captured.
         return response;
     }
     catch (e) {
